@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "nova Square",cursive;
+}
+body{
+    background:rgb(232, 231, 231);
+}
+h1{
+    font-size: 5.4rem;
+    color: rgb(43, 43, 43);
+    text-align: center;
+    margin: 2rem;
+}
+
+.container{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.flex-coloumn{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+
+.btn{
+    padding: 1.2rem;
+    background:linear-gradient(90deg, rgb(43, 43, 43) 0%,rgb(22,22,22) 100%);
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin: 1rem;
+    width: 15.4rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    outline: none;
+}
+.btn:hover{
+    background: linear-gradient(90deg,#ffffff 0%, #e9e9e9 100%);
+    color: rgb(22,22,22);
+    transition: 150ms;
+    transform: scale(1.03);
+}
+.btn[disabled]:hover{
+    transform: none;
+    background: none;
+}
+
+/* quizz.html css */
+/* .ans-container{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+.choise-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 90%;
+    background: rgb(22,22,22);
+    border-radius: 0.4rem;
+    font-size: 2.9rem;
+    min-width: 80rem;
+   color: #f8f6f6;
+   padding: 1rem 0;
+   cursor: pointer;
+}
+.choise-container:hover{
+    background: linear-gradient(90deg,#ffffff 0%, #e9e9e9 100%);
+    color: rgb(22,22,22);
+   transform: scale(1.02);
+   transition: 0.4s;
+}
+.choise-pre{
+    padding: 0.6rem 0.8rem;
+}
+.choise-text{
+    padding: 0.6rem 0.8rem;
+}
+.correct{
+    background: linear-gradient(90deg,lightgreen 0%, rgb(202, 240, 202) 100%);
+}
+.worng{
+    background: linear-gradient(90deg,rgb(243, 73, 73) 0%, rgb(240, 134, 134) 100%);
+}
+
+#head{
+    display: flex;
+    justify-content: space-between;
+
+}
+.head-pre{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.head-main-text{
+    text-align: center;
+}
+#progress-bar{
+ width: 20rem;
+ height: 3rem;
+ border: 0.2rem;
+ border:0.2rem solid rgb(22,22,22);
+ margin-top: 2rem;
+ border-radius: 0.5rem;
+}
+#progress-full{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg,#ebeaea 0%, #b6b4b4 100%);;
+}
+h3{
+    font-size: 2.3rem;
+    color: #464545;
+}
+.next-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hide{
+    display: none;
+}
+a{
+    outline: none;
+}
+@media only screen and (max-width:730px){
+   .choise-container{
+       width: 40rem;
+   }
+}
